@@ -681,7 +681,7 @@ msgid ""
 "%(max_pages)s pages each."
 msgstr ""
 "Még %(remaining_jobs)s szöveg- vagy PDF-fájlt nyomtathatsz, "
-"mindegyik legfeljebb %(max_page)s oldalt tartalmazhat."
+"mindegyik legfeljebb %(max_pages)s oldalt tartalmazhat."
 
 #, python-format
 msgid ""
@@ -689,7 +689,7 @@ msgid ""
 "pages each."
 msgstr ""
 "Még %(remaining_jobs)s szövegfájlt nyomtathatsz, "
-"mindegyik legfejlebb %(max_page)s oldalt tartalmazhat."
+"mindegyik legfejlebb %(max_pages)s oldalt tartalmazhat."
 
 msgid "File (text or PDF)"
 msgstr "Fájl (szöveg vagy PDF)"
