@@ -136,7 +136,7 @@ msgstr ""
 "lehet a feladatban megadott időlimitnél."
 
 msgid "Execution killed (could be triggered by violating memory limits)"
-msgstr "Kilőve futás közben"
+msgstr "Kilőve futás közben (memóriatúllépés is okozhatja)"
 
 msgid ""
 "The evaluation was killed by a signal. Among other things, this might be "
@@ -196,20 +196,21 @@ msgstr "zsetonok"
 
 #, python-format
 msgid "You don't have %(type_pl)s available for this task."
-msgstr ""
+msgstr "Nem áll rendelkezésedre %(type_pl)s ehhez a feladathoz."
 
 #, python-format
 msgid "You have an infinite number of %(type_pl)s for this task."
-msgstr ""
+msgstr "Végtelen %(type_pl)s áll rendelkezésedre ehhez a feladathoz."
 
 #, python-format
 msgid "You start with no %(type_pl)s."
-msgstr ""
+msgstr "Kezdetben nulla %(type_pl)s áll rendelkezésedre."
 
 #, python-format
 msgid "You start with one %(type_s)s."
 msgid_plural "You start with %(gen_initial)d %(type_pl)s."
-msgstr[0] ""
+msgstr[0] "Kezdetben egy %(type_s)s áll rendelkezésedre."
+msgstr[1] "Kezdetben %(gen_initial)d %(type_pl)s áll rendelkezésedre."
 
 #, python-format
 msgid "Every minute "
@@ -220,12 +221,14 @@ msgstr[1] "Minden %(gen_interval)g. percben "
 #, python-format
 msgid "you get another %(type_s)s, "
 msgid_plural "you get %(gen_number)d other %(type_pl)s, "
-msgstr[0] ""
+msgstr[0] "eggyel több %(type_s)s áll majd rendelkezésedre, "
+msgstr[1] "%(gen_number)d %(type_pl)s kerül hozzád, "
 
 #, python-format
 msgid "up to a maximum of one %(type_s)s."
 msgid_plural "up to a maximum of %(gen_max)d %(type_pl)s."
-msgstr[0] ""
+msgstr[0] "addig, amíg összesen egy %(type_s)s lesz nálad."
+msgstr[1] "addig, amíg összesen %(gen_max)d %(type_pl)s lesz nálad."
 
 #, python-format
 msgid "you get another %(type_s)s."
@@ -239,7 +242,8 @@ msgstr ""
 #, python-format
 msgid "You can use a %(type_s)s every second "
 msgid_plural "You can use a %(type_s)s every %(min_interval)g seconds "
-msgstr[0] ""
+msgstr[0] "Egy %(type_s)s felhasználható minden másodpercben "
+msgstr[1] "Egy %(type_s)s felhasználható minden %(min_interval)g. másodpercben "
 
 #, python-format
 msgid "and no more than one %(type_s)s in total."
@@ -264,7 +268,7 @@ msgstr ""
 
 #, python-format
 msgid "You have reached the maximum limit of at most %d print jobs."
-msgstr ""
+msgstr "Elérted a nyomtatások maximális számát (%d)."
 
 msgid "Invalid format!"
 msgstr "Érvénytelen formátum!"
@@ -277,13 +281,13 @@ msgstr "Túl nagy fájl!"
 
 #, python-format
 msgid "Each file must be at most %d bytes long."
-msgstr ""
+msgstr "Minden fájl maximum %d bájt méretű lehet."
 
 msgid "Print job storage failed!"
 msgstr ""
 
 msgid "Please try again."
-msgstr ""
+msgstr "Kérlek próbáld újra."
 
 msgid "Token request discarded"
 msgstr ""
@@ -309,10 +313,10 @@ msgid "Your print job has been received."
 msgstr ""
 
 msgid "Submission received"
-msgstr ""
+msgstr "Beküldésed fogadva."
 
 msgid "Your submission has been received and is currently being evaluated."
-msgstr ""
+msgstr "A beküldésed fogadva, jelenleg kiértékelés alatt."
 
 msgid "Compiling..."
 msgstr "Fordítás..."
@@ -327,7 +331,7 @@ msgid "Evaluated"
 msgstr "Kiértékelve"
 
 msgid "Token request received"
-msgstr ""
+msgstr "Zseton kérelem fogadva"
 
 msgid "Your request has been received and applied to the submission."
 msgstr ""
@@ -339,7 +343,7 @@ msgid "Your test has been received and is currently being executed."
 msgstr ""
 
 msgid "details"
-msgstr ""
+msgstr "részletek"
 
 msgid "Executing..."
 msgstr "Végrehajtás..."
@@ -393,7 +397,7 @@ msgstr ""
 "<em>(%(username)s)</em>"
 
 msgid "Failed to log in."
-msgstr ""
+msgstr "Sikertelen bejelentkezés"
 
 msgid "Welcome"
 msgstr "Hello"
@@ -481,6 +485,7 @@ msgid ""
 "The main Java class of the solution should have exactly the same name as the"
 " task."
 msgstr ""
+"A fő Java osztály nevének meg kell egyeznie a feladat nevével."
 
 msgid "Submission details for compilation"
 msgstr "Fordítás kimenetele"
@@ -575,7 +580,7 @@ msgstr "Különböző számú zsetonod van mindegyik feladathoz."
 
 #, python-format
 msgid "You can find the rules for the %(type_pl)s on each task's description page."
-msgstr ""
+msgstr "A %(type_pl)s használatára vonatkozó szabályokat a feladatok leírásában találod meg."
 
 msgid "You have a set of tokens shared among all tasks."
 msgstr "A zsetonjaidat bármelyik feladatra felhasználhatod."
@@ -814,6 +819,8 @@ msgid ""
 "Remember that to see the detailed result of a submission you need to use "
 "both a contest-token and a task-token."
 msgstr ""
+"Fontos, hogy egy beküldés eredményének részletes megtekintéséhez "
+"egy verseny és egy feladat zsetont is fel kell használnod."
 
 msgid "Attachments"
 msgstr "Mellékletek"
@@ -826,7 +833,7 @@ msgstr "töltés..."
 
 #, python-format
 msgid "%(name)s (%(short_name)s) <small>submissions</small>"
-msgstr ""
+msgstr "%(name)s (%(short_name)s) <small>beküldések</small>"
 
 msgid "Score:"
 msgstr "Pontszám:"
@@ -838,7 +845,7 @@ msgid "Score of tokened submissions:"
 msgstr ""
 
 msgid "Total score:"
-msgstr ""
+msgstr "Teljes pontszám:"
 
 msgid "Submit a solution"
 msgstr "Küldd be megoldásod"
@@ -860,14 +867,14 @@ msgid "Tokens are not allowed on this task."
 msgstr "Nem használhatsz zsetonokat ennél a feladatnál."
 
 msgid "Right now, you have infinite tokens available on this task."
-msgstr ""
+msgstr "Jelenleg végtelen zsetonod van ehhez a feladathoz."
 
 msgid "Right now, you have one token available on this task."
-msgstr ""
+msgstr "Jelenleg egy zsetonod van ehhez a feladathoz."
 
 #, python-format
 msgid "Right now, you have %(tokens)s tokens available on this task."
-msgstr ""
+msgstr "Jelenleg %(tokens)s zsetonod van ehhez a feladathoz."
 
 #, python-format
 msgid "But you have to wait until %(expiration_time)s to use them."
@@ -875,7 +882,7 @@ msgstr ""
 
 #, python-format
 msgid "You will receive a new token at %(gen_time)s."
-msgstr ""
+msgstr "Új zsetont kapsz %(gen_time)s időpontban."
 
 msgid "In the current situation, no more tokens will be generated."
 msgstr ""
@@ -891,7 +898,7 @@ msgid "Public score"
 msgstr "Nyilvános pontszám"
 
 msgid "Total score"
-msgstr ""
+msgstr "Teljes pontszám"
 
 msgid "Score"
 msgstr "Pontszám"
@@ -937,5 +944,5 @@ msgid "Test details"
 msgstr ""
 
 msgid "Evaluation outcome"
-msgstr "Értékelés eredménye"
+msgstr "Kiértékelés eredménye"
 
