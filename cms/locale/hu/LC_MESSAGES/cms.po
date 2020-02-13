@@ -551,7 +551,7 @@ msgid "The analysis mode will start at %(start_time)s and will end at %(stop_tim
 msgstr "Az analízis mód kezdete %(start_time)s, vége %(stop_time)s."
 
 msgid "The analysis mode is currently running."
-msgstr "Az analízis mód jelenleg "
+msgstr "Az analízis mód jelenleg bekapcsolva."
 
 #, python-format
 msgid "The analysis mode started at %(start_time)s and will end at %(stop_time)s."
