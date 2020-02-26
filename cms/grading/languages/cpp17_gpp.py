@@ -32,7 +32,7 @@ from cms.grading import CompiledLanguage
 __all__ = ["Cpp17Gpp"]
 
 
-class Cpp11Gpp(CompiledLanguage):
+class Cpp17Gpp(CompiledLanguage):
     """This defines the C++ programming language, compiled with g++ (the
     version available on the system) using the C++17 standard.
 
