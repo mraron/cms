@@ -51,7 +51,7 @@ msgstr "A pontozás részletei ideiglenesen nem elérhetőek."
 
 #, python-format
 msgid "Subtask %(index)s"
-msgstr "Alfeladat %(index)s"
+msgstr "%(index)s. tesztcsoport"
 
 msgid "Compilation succeeded"
 msgstr "Sikeres fordítás"
@@ -63,7 +63,7 @@ msgid "Compilation failed"
 msgstr "Sikertelen fordítás"
 
 msgid "Your submission did not compile correctly."
-msgstr "A beküldött megoldások nem fordult le."
+msgstr "A beküldött megoldásod nem fordult le."
 
 msgid "Compilation timed out"
 msgstr "A fordítás túllépte az időlimitet"
@@ -215,7 +215,7 @@ msgstr[1] "Kezdetben %(gen_initial)d %(type_pl)s áll rendelkezésedre."
 #, python-format
 msgid "Every minute "
 msgid_plural "Every %(gen_interval)g minutes "
-msgstr[0] "Minde percben "
+msgstr[0] "Minden percben "
 msgstr[1] "Minden %(gen_interval)g. percben "
 
 #, python-format
@@ -400,7 +400,7 @@ msgid "Failed to log in."
 msgstr "Sikertelen bejelentkezés"
 
 msgid "Welcome"
-msgstr "Hello"
+msgstr "Üdv"
 
 msgid "Please log in"
 msgstr "Kérlek jelentkezz be"
