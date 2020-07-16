@@ -40,6 +40,7 @@ import yaml
 from datetime import timedelta
 
 from cms import TOKEN_MODE_DISABLED, TOKEN_MODE_FINITE, TOKEN_MODE_INFINITE
+from cms import FEEDBACK_LEVEL_FULL, FEEDBACK_LEVEL_RESTRICTED
 from cms.db import Contest, User, Task, Statement, Attachment, Team, Dataset, \
     Manager, Testcase
 from cms.grading.languagemanager import LANGUAGES, HEADER_EXTS
@@ -393,6 +394,11 @@ class YamlLoader(ContestLoader, TaskLoader, UserLoader, TeamLoader):
             args["score_mode"] = SCORE_MODE_MAX_SUBTASK
         elif conf.get("score_mode", None) == SCORE_MODE_MAX_TOKENED_LAST:
             args["score_mode"] = SCORE_MODE_MAX_TOKENED_LAST
+
+        if conf.get("feedback_level", None) == FEEDBACK_LEVEL_FULL:
+            args["feedback_level"] = FEEDBACK_LEVEL_FULL
+        elif conf.get("feedback_level", None) == FEEDBACK_LEVEL_RESTRICTED:
+            args["feedback_level"] = FEEDBACK_LEVEL_RESTRICTED
 
         # Use the new token settings format if detected.
         if "token_mode" in conf:
