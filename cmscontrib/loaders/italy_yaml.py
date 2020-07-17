@@ -272,6 +272,10 @@ class YamlLoader(ContestLoader, TaskLoader, UserLoader, TeamLoader):
         if "last_name" not in args:
             args["last_name"] = args["username"]
 
+        load(conf, args, "email")
+        load(conf, args, "timezone")
+        load(conf, args, "preferred_languages")
+
         logger.info("User parameters loaded.")
 
         return User(**args)
@@ -388,17 +392,20 @@ class YamlLoader(ContestLoader, TaskLoader, UserLoader, TeamLoader):
 
         args["submission_format"] = ["%s.%%l" % name]
 
-        if conf.get("score_mode", None) == SCORE_MODE_MAX:
-            args["score_mode"] = SCORE_MODE_MAX
-        elif conf.get("score_mode", None) == SCORE_MODE_MAX_SUBTASK:
-            args["score_mode"] = SCORE_MODE_MAX_SUBTASK
-        elif conf.get("score_mode", None) == SCORE_MODE_MAX_TOKENED_LAST:
-            args["score_mode"] = SCORE_MODE_MAX_TOKENED_LAST
 
-        if conf.get("feedback_level", None) == FEEDBACK_LEVEL_FULL:
-            args["feedback_level"] = FEEDBACK_LEVEL_FULL
-        elif conf.get("feedback_level", None) == FEEDBACK_LEVEL_RESTRICTED:
-            args["feedback_level"] = FEEDBACK_LEVEL_RESTRICTED
+        score_mode = conf.get("score_mode", None)
+        if score_mode:
+            if score_mode in (SCORE_MODE_MAX, SCORE_MODE_MAX_SUBTASK, SCORE_MODE_MAX_TOKENED_LAST):
+                args["score_mode"] = score_mode
+            else:
+                logger.warning("invalid score_mode: %s" % score_mode)
+
+        feedback_level = conf.get("feedback_level", None)
+        if feedback_level:
+            if feedback_level in (FEEDBACK_LEVEL_FULL, FEEDBACK_LEVEL_RESTRICTED):
+                args["feedback_level"] = feedback_level
+            else:
+                logger.warning("invalid feedback_level: %s" % feedback_level)
 
         # Use the new token settings format if detected.
         if "token_mode" in conf:
