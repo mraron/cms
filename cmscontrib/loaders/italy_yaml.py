@@ -172,6 +172,18 @@ class YamlLoader(ContestLoader, TaskLoader, UserLoader, TeamLoader):
 
         logger.info("Loading parameters for contest %s.", args["name"])
 
+
+        load(conf, args, "allowed_localizations")
+        load(conf, args, "languages")
+        load(conf, args, "submissions_download_allowed")
+        load(conf, args, "allow_questions")
+        load(conf, args, "allow_user_tests")
+        load(conf, args, "block_hidden_participations")
+        load(conf, args, "allow_password_authentication")
+
+        load(conf, args, "ip_restriction")
+        load(conf, args, "ip_autologin")
+
         # Use the new token settings format if detected.
         if "token_mode" in conf:
             load(conf, args, "token_mode")
@@ -215,12 +227,21 @@ class YamlLoader(ContestLoader, TaskLoader, UserLoader, TeamLoader):
 
         load(conf, args, ["start", "inizio"], conv=make_datetime)
         load(conf, args, ["stop", "fine"], conv=make_datetime)
+
+        load(conf, args, "analysis_enabled")
+        load(conf, args, "analysis_start", conv=make_datetime)
+        load(conf, args, "analysis_stop", conv=make_datetime)
+
+        load(conf, args, "timezone")
+
         load(conf, args, ["per_user_time"], conv=make_timedelta)
 
         load(conf, args, "max_submission_number")
         load(conf, args, "max_user_test_number")
         load(conf, args, "min_submission_interval", conv=make_timedelta)
         load(conf, args, "min_user_test_interval", conv=make_timedelta)
+
+        load(conf, args, "score_precision")
 
         tasks = load(conf, None, ["tasks", "problemi"])
         participations = load(conf, None, ["users", "utenti"])
