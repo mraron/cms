@@ -75,6 +75,8 @@ class ContestHandler(BaseHandler):
         self.contest_url = None
 
     def prepare(self):
+        super(ContestHandler, self).prepare()
+
         self.choose_contest()
 
         if self.contest.allowed_localizations:
@@ -85,7 +87,7 @@ class ContestHandler(BaseHandler):
                 (k, v) for k, v in iteritems(self.available_translations)
                 if k in lang_codes)
 
-        super(ContestHandler, self).prepare()
+        #super(ContestHandler, self).prepare()
 
         if self.is_multi_contest():
             self.contest_url = self.url[self.contest.name]
