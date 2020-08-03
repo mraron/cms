@@ -121,7 +121,7 @@ def extract_outcome_and_text(sandbox):
     # use a stock message, that can be translated.
     if text.startswith("translate:"):
         remaining = text[len("translate:"):].strip()
-        if remaining in ["success", "partial", "wrong"]:
+        if remaining in ["success", "partial", "wrong", "formaterror", "protocolerror"]:
             text = EVALUATION_MESSAGES.get(remaining).message
         else:
             remaining = remaining[:15]  # to avoid logging lots of text
