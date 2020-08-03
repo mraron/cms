@@ -657,32 +657,35 @@ class YamlLoader(ContestLoader, TaskLoader, UserLoader, TeamLoader):
                      os.path.join(self.path, "cor", "manager")]
             for path in paths:
                 if os.path.exists(path):
-                    num_processes = load(conf, None, "num_processes")
-                    if num_processes is None:
-                        num_processes = 1
                     logger.info("Task type Communication")
                     args["task_type"] = "Communication"
-                    args["task_type_parameters"] = \
-                        [num_processes, "stub", "fifo_io"]
+                    load(conf, args, "task_type_parameters")
+
+                    if "task_type_parameters" not in args:
+                        logger.warning("no 'task_type_parameters'")
+                        args["task_type_parameters"] = [1, "stub", "fifo_io"]
+
                     digest = self.file_cacher.put_file_from_path(
                         path,
                         "Manager for task %s" % task.name)
                     args["managers"] += [
                         Manager("manager", digest)]
-                    for lang in LANGUAGES:
-                        stub_name = os.path.join(
-                            self.path, "sol", "stub%s" % lang.source_extension)
-                        if os.path.exists(stub_name):
-                            digest = self.file_cacher.put_file_from_path(
-                                stub_name,
-                                "Stub for task %s and language %s" % (
-                                    task.name, lang.name))
-                            args["managers"] += [
-                                Manager(
-                                    "stub%s" % lang.source_extension, digest)]
-                        else:
-                            logger.warning("Stub for language %s not "
-                                           "found.", lang.name)
+
+                    if args["task_type_parameters"][1] == "stub":
+                        for lang in LANGUAGES:
+                            stub_name = os.path.join(
+                                self.path, "sol", "stub%s" % lang.source_extension)
+                            if os.path.exists(stub_name):
+                                digest = self.file_cacher.put_file_from_path(
+                                    stub_name,
+                                    "Stub for task %s and language %s" % (
+                                        task.name, lang.name))
+                                args["managers"] += [
+                                    Manager(
+                                        "stub%s" % lang.source_extension, digest)]
+                            else:
+                                logger.warning("Stub for language %s not "
+                                               "found.", lang.name)
                     for other_filename in os.listdir(os.path.join(self.path,
                                                                   "sol")):
                         if any(other_filename.endswith(header)
