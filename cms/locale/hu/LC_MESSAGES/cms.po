@@ -108,6 +108,18 @@ msgstr "Helytelen kimenet"
 msgid "Your submission ran, but gave the wrong answer"
 msgstr "A beküldött megoldásod lefutott, de helytelen eredményt adott"
 
+msgid "Output format error"
+msgstr "Output formátum hiba"
+
+msgid "Your submission ran, but the produced output does not satisfy the formatting requirements of the task"
+msgstr "A beköldött megoldásod lefutott, azonban nem megfelelő formátumú kimenetet állított elő"
+
+msgid "Protocol error"
+msgstr "Protokoll hiba"
+
+msgid "Your submission ran, but did not satisfy the protocol requirements of the task"
+msgstr "A beküldött megoldásod lefutott, azonban nem követte a feladat által előírt protokollt"
+
 #, python-format
 msgid "Evaluation didn't produce file %s"
 msgstr "A kiértékelés közben nem jött létre a(z) %s fájl"

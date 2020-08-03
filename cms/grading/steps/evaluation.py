@@ -62,6 +62,14 @@ EVALUATION_MESSAGES = MessageCollection([
     HumanMessage("wrong",
                  N_("Output isn't correct"),
                  N_("Your submission ran, but gave the wrong answer")),
+    HumanMessage("formaterror",
+                 N_("Output format error"),
+                 N_("Your submission ran, but the produced output does "
+                    "not satisfy the formatting requirements of the task")),
+    HumanMessage("protocolerror",
+                 N_("Protocol error"),
+                 N_("Your submission ran, but did not satisfy the "
+                    "protocol requirements of the task")),
     HumanMessage("nooutput",
                  N_("Evaluation didn't produce file %s"),
                  N_("Your submission ran, but did not write on the "
