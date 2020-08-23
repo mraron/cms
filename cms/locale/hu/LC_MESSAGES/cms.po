@@ -273,7 +273,7 @@ msgid_plural "You can use no more than %(max_number)d %(type_pl)s in total."
 msgstr[0] ""
 
 msgid "You have no limitations on how you use them."
-msgstr ""
+msgstr "Nincsen korlátozva, hogy hogyan használhatod őket."
 
 msgid "Too many print jobs!"
 msgstr ""
@@ -286,7 +286,7 @@ msgid "Invalid format!"
 msgstr "Érvénytelen formátum!"
 
 msgid "Please select the correct files."
-msgstr ""
+msgstr "Kérlek válaszd ki a megfelelő fájlokat."
 
 msgid "File too big!"
 msgstr "Túl nagy fájl!"
@@ -760,7 +760,7 @@ msgid "Standard error"
 msgstr "Standard hibakimenet"
 
 msgid "None"
-msgstr ""
+msgstr "Egyik sem"
 
 msgid "Download"
 msgstr "Letöltés"
@@ -794,10 +794,10 @@ msgstr ""
 "Ezen feladat leírása elérhető több verzióban, több nyelven."
 
 msgid "You can see (and download) all of them using the list on the right."
-msgstr ""
+msgstr "A jobb oldali listában láthatod (és töltheted le) az elérhető fordításokat."
 
 msgid "Some suggested translations follow."
-msgstr ""
+msgstr "Javasolt fordítások következnek."
 
 #, python-format
 msgid "Statement in <b>%(lang)s</b>"
@@ -854,7 +854,7 @@ msgid "Public score:"
 msgstr "Nyilvános pontszám:"
 
 msgid "Score of tokened submissions:"
-msgstr ""
+msgstr "Zsetonos beküldések pontszáma:"
 
 msgid "Total score:"
 msgstr "Teljes pontszám:"
@@ -870,7 +870,7 @@ msgid "You can submit %(submissions_left)s more solution(s)."
 msgstr "Még %(submissions_left)s alkalommal küldhetsz be megoldást."
 
 msgid "submission.zip"
-msgstr ""
+msgstr "submission.zip"
 
 msgid "Previous submissions"
 msgstr "Korábbi beküldések"
@@ -890,7 +890,7 @@ msgstr "Jelenleg %(tokens)s zsetonod van ehhez a feladathoz."
 
 #, python-format
 msgid "But you have to wait until %(expiration_time)s to use them."
-msgstr ""
+msgstr "De várnod kell %(expiration_time)s időpontig, hogy használhasd őket."
 
 #, python-format
 msgid "You will receive a new token at %(gen_time)s."
@@ -900,11 +900,11 @@ msgid "In the current situation, no more tokens will be generated."
 msgstr ""
 
 msgid "Right now, you do not have tokens available for this task."
-msgstr ""
+msgstr "Jelenleg nincs zsetonod ehhez a feladathoz."
 
 #, python-format
 msgid "But you will have to wait until %(expiration_time)s to use it."
-msgstr ""
+msgstr "De várnod kell %(expiration_time)s időpontig, hogy használhasd."
 
 msgid "Public score"
 msgstr "Nyilvános pontszám"
@@ -931,17 +931,17 @@ msgid "Close"
 msgstr "Bezárás"
 
 msgid "Submit a test"
-msgstr ""
+msgstr "Teszt beküldése"
 
 #, python-format
 msgid "You can submit %(user_tests_left)s more test(s)."
-msgstr ""
+msgstr "Még %(user_tests_left)s tesztet küldhetsz be."
 
 msgid "input"
 msgstr "bemenet"
 
 msgid "Previous tests"
-msgstr ""
+msgstr "Előző tesztek"
 
 msgid "Input"
 msgstr "Bemenet"
@@ -953,7 +953,7 @@ msgid "no tests yet"
 msgstr "nincsenek tesztek"
 
 msgid "Test details"
-msgstr ""
+msgstr "Teszt részletei"
 
 msgid "Evaluation outcome"
 msgstr "Kiértékelés eredménye"

@@ -99,6 +99,18 @@ msgstr "Nesprávný výstup"
 msgid "Your submission ran, but gave the wrong answer"
 msgstr "Odevzdané řešení doběhlo, ale vydalo špatnou odpověď"
 
+msgid "Output format error"
+msgstr "Chyba výstupního formátu (Output format error)"
+
+msgid "Your submission ran, but the produced output does not satisfy the formatting requirements of the task"
+msgstr "Vaše řešení doběhlo, ale výstup nemá formát dle zadání"
+
+msgid "Protocol error"
+msgstr "Chyba protokolu (Protocol error)"
+
+msgid "Your submission ran, but did not satisfy the protocol requirements of the task"
+msgstr "Vaše řešení doběhlo, ale nevyhovělo protokolu ze zadání"
+
 #, python-format
 msgid "Evaluation didn't produce file %s"
 msgstr "Vyhodnocení nevytvořilo soubor %s"

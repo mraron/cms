@@ -20,6 +20,18 @@ msgstr ""
 "Generated-By: Babel 2.8.0\n"
 "X-Generator: Lokalize 19.12.2\n"
 
+msgid "Output format error"
+msgstr "Ausgabeformat fehlerhaft"
+
+msgid "Your submission ran, but the produced output does not satisfy the formatting requirements of the task"
+msgstr "Deine Einsendung lief, aber die produzierte Ausgabe erfüllt nicht die Formatierungskriterien der Aufgabe."
+
+msgid "Protocol error"
+msgstr "Protokoll-Fehler"
+
+msgid "Your submission ran, but did not satisfy the protocol requirements of the task"
+msgstr "Deine Einsendung lief, erfüllt aber nicht die Protokollkriterien der Aufgabe"
+
 msgid "N/A"
 msgstr "nicht verfügbar"
 

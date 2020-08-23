@@ -112,6 +112,18 @@ msgstr "Išvestis neteisinga"
 msgid "Your submission ran, but gave the wrong answer"
 msgstr "Tavo sprendimas buvo įvykdytas, tačiau pateikė neteisingą rezultatą."
 
+msgid "Output format error"
+msgstr "Išvesties formato klaida"
+
+msgid "Your submission ran, but the produced output does not satisfy the formatting requirements of the task"
+msgstr "Pateikta programa įvykdyta, bet jos pateikta išvestis neatitiko užduoties išvesties formato reikalavimų"
+
+msgid "Protocol error"
+msgstr "Protokolo klaida"
+
+msgid "Your submission ran, but did not satisfy the protocol requirements of the task"
+msgstr "Pateikta programa įvykdyta, bet neatitiko užduoties protokolo reikalavimų"
+
 #, python-format
 msgid "Evaluation didn't produce file %s"
 msgstr "Vykdymo metu nebuvo sukurtas failas %s"

@@ -61,6 +61,18 @@ msgstr "Izhod je napačen"
 msgid "Your submission ran, but gave the wrong answer"
 msgstr "Tvoja oddaja je bila pognana, vendar je vrnila napačen odgovor"
 
+msgid "Output format error"
+msgstr "Napaka v prikazu"
+
+msgid "Your submission ran, but the produced output does not satisfy the formatting requirements of the task"
+msgstr "Tvoja rešitev je bila uspešno pognana, vendar izhod programa ni zadostil zahtevanemu formatu naloge"
+
+msgid "Protocol error"
+msgstr "Napaka v protokolu"
+
+msgid "Your submission ran, but did not satisfy the protocol requirements of the task"
+msgstr "Tvoja rešitev je bila uspešno pognana, vendar ni zadostila zahtevanemu protokolu naloge"
+
 #, python-format
 msgid "Evaluation didn't produce file %s"
 msgstr "Pri ovrednotenju ni nastala datoteka %s"

@@ -74,6 +74,18 @@ msgstr "Iesire gresita"
 msgid "Your submission ran, but gave the wrong answer"
 msgstr "Expedierea a rulat, insa a dat un raspuns gresit"
 
+msgid "Output format error"
+msgstr "Eroare de formatare in output"
+
+msgid "Your submission ran, but the produced output does not satisfy the formatting requirements of the task"
+msgstr "Submisia voastra a rulat, dar output-ul produs nu satisface restrictiile de formatare precizate in enunt"
+
+msgid "Protocol error"
+msgstr "Eroare de protocol"
+
+msgid "Your submission ran, but did not satisfy the protocol requirements of the task"
+msgstr "Submisia voastra a rulat, dar nu a satisfacut restrictiile de protocol precizate in enunt"
+
 #, python-format
 msgid "Evaluation didn't produce file %s"
 msgstr "Evaluarea nu a putut crea fisierul %s"
