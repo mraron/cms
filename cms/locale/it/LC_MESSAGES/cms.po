@@ -80,6 +80,18 @@ msgstr "L'output non è corretto"
 msgid "Your submission ran, but gave the wrong answer"
 msgstr "La tua sottoposizione è stata eseguita, ma la risposta è sbagliata"
 
+msgid "Output format error"
+msgstr "Output malformato"
+
+msgid "Your submission ran, but the produced output does not satisfy the formatting requirements of the task"
+msgstr "La tua sottoposizione è stata eseguita, ma l'output prodotto non soddisfa la formattazione richiesta dal problema"
+
+msgid "Protocol error"
+msgstr "Errore di protocollo"
+
+msgid "Your submission ran, but did not satisfy the protocol requirements of the task"
+msgstr "La tua sottoposizone è stata eseguita, ma non ha soddisfatto il protocollo richiesto dal problema"
+
 #, python-format
 msgid "Evaluation didn't produce file %s"
 msgstr "La valutazione non ha prodotto il file %s"
