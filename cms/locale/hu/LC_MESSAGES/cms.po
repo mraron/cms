@@ -801,7 +801,7 @@ msgstr "Javasolt fordítások következnek."
 
 #, python-format
 msgid "Statement in <b>%(lang)s</b>"
-msgstr "Feladatleírás <b>%(lang)s</b>"
+msgstr "Feladatleírás <b>%(lang)s</b> nyelven"
 
 #, python-format
 msgid "Statement in %(lang)s"
