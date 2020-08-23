@@ -33,8 +33,8 @@
 <div class="statement many_statements">
     <div class="main_statements">
         <p>
-            {% trans %}The statement for this task is available in multiple versions, in different languages.{% endtrans %}
-            {% trans %}You can see (and download) all of them using the list on the right.{% endtrans %}
+            {% trans %}The statement for this task is available in multiple versions, in different languages.{% endtrans %} 
+            {% trans %}You can see (and download) all of them using the list on the right.{% endtrans %} 
             {% trans %}Some suggested translations follow.{% endtrans %}
         </p>
     {% for statement in itervalues(task.statements)|sort(attribute="language") %}
