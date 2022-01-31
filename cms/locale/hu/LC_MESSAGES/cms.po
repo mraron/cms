@@ -627,10 +627,8 @@ msgstr ""
 msgid "As soon as the contest starts you can choose to start your time frame."
 msgstr "Amint elkezdődik a verseny, elindíthatod az időablakod."
 
-msgid ""
-"Once you start, you can submit solutions until the end of the time frame or "
-"until the end of the contest, whatever comes first."
-msgstr ""
+msgid "Once you start, you can submit solutions until the end of the time frame or until the end of the contest, whatever comes first."
+msgstr "Miután elindítottad, be tudsz adni megoldásokat az időablakod végéig vagy a verseny végéig, ha az előbb bekövetkezik."
 
 msgid "By clicking on the button below you can start your time frame."
 msgstr "A lenti gombra kattintva indíthatod az időablakod."
